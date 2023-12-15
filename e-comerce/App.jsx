@@ -1,21 +1,25 @@
 
-import { StyleSheet, Text, View } from 'react-native';
-import Categorias from './components/Categorias';
+import { StyleSheet, View } from 'react-native';
+import CategoriasScreen from './src/screen/CategoriasScreen';
+import {useFonts} from 'expo-font'
+import ProductoCatScreen from './src/screen/ProductoCatScreen';
+
 
 export default function App() {
+
+  const [cargarFuente] = useFonts({
+    'Inter-regular' : require('./assets/fonts/Inter-Regular.ttf')
+  })
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <Categorias></Categorias>
+      
+      <ProductoCatScreen/>
+
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    
-    alignItems: 'center',
-    justifyContent: 'center',
   },
 });
