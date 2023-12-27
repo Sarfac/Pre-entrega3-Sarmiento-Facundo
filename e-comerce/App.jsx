@@ -1,6 +1,6 @@
 
 import { StyleSheet, View } from 'react-native';
-import CategoriasScreen from './src/screen/CategoriasScreen';
+
 import {useFonts} from 'expo-font'
 import ProductoCatScreen from './src/screen/ProductoCatScreen';
 
