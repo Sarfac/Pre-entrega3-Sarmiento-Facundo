@@ -9,7 +9,7 @@ const Card = ({children, style}) => {
     </View>
   )
 }
-
+console.log()
 export default Card
 
 const styles = StyleSheet.create({
